@@ -294,7 +294,7 @@ export function useCoAgent<T = any>(options: UseCoagentOptions<T>): UseCoagentRe
       }
     };
     void fetchAgentState();
-  }, [threadId]);
+  }, [threadId,name]);
 
   // Sync internal state with external state if state management is external
   useEffect(() => {
